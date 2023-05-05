@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
-import ContactList from './ContactList/ContactList';
-import ContactForm from './ContactForm/ContactForm';
-import Filter from './Filter/Filter';
-import Section from './Section/Section';
 import Header from './Header/Header';
+import Section from './Section/Section';
+import ContactList from './ContactList/ContactList';
+import Filter from './Filter/Filter';
+import ContactForm from './ContactForm/ContactForm';
+// import Filter from './Filter/Filter';
+// import Section from './Section/Section';
+// import Header from './Header/Header';
 
 class App extends Component {
   state = {

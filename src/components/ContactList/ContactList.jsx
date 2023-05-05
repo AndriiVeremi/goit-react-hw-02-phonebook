@@ -9,7 +9,7 @@ const ContactList = ({ contacts, onDeleteContacts }) => (
         <p className="name">{name} :</p>
         <p className="text">{number}</p>
         <button
-          className="btn"
+          className="btn__on"
           type="button"
           onClick={() => onDeleteContacts(id)}
         >

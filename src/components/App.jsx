@@ -4,9 +4,6 @@ import Section from './Section/Section';
 import ContactList from './ContactList/ContactList';
 import Filter from './Filter/Filter';
 import ContactForm from './ContactForm/ContactForm';
-// import Filter from './Filter/Filter';
-// import Section from './Section/Section';
-// import Header from './Header/Header';
 
 class App extends Component {
   state = {
@@ -75,19 +72,4 @@ class App extends Component {
 
 export default App;
 
-// export const App = () => {
-//   return (
-//     <div
-//       style={{
-//         height: '100vh',
-//         display: 'flex',
-//         justifyContent: 'center',
-//         alignItems: 'center',
-//         fontSize: 40,
-//         color: '#010101'
-//       }}
-//     >
-//       React homework template Dashuk
-//     </div>
-//   );
-// };
+

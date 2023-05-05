@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-
 import ContactList from './ContactList/ContactList';
 import ContactForm from './ContactForm/ContactForm';
 import Filter from './Filter/Filter';
 import Section from './Section/Section';
 import Header from './Header/Header';
 
-export class App extends Component {
+class App extends Component {
   state = {
     contacts: [
       { id: 'id-1', name: 'Rosie Simpson', number: '459-12-56' },
@@ -56,7 +55,7 @@ export class App extends Component {
     const visibleContacts = this.getVisibleContacts();
 
     return (
-      <>
+      <div>
         <Section title="Phonebook">
           <ContactForm value={contacts} onAddToList={this.addToList} />
           <Header title="Contacts" />
@@ -66,12 +65,12 @@ export class App extends Component {
             onDeleteContacts={this.deleteContacts}
           />
         </Section>
-      </>
+      </div>
     );
   }
 }
 
-// export default App;
+export default App;
 
 // export const App = () => {
 //   return (

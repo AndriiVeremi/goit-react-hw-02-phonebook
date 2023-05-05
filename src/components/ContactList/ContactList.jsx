@@ -1,9 +1,9 @@
 import React from 'react';
 import './ContactList.css';
 
-const ContactList = ({ value, onDeleteContacts }) => (
+const ContactList = ({ contacts, onDeleteContacts }) => (
   <ul className="Contact__list">
-    {value.map(({ id, name, number }) => (
+    {contacts.map(({ id, name, number }) => (
       <li className="Contact__item" key={id}>
         <p className="Contact__name">{name} :</p>
         <p className="Contact__text">{number}</p>

@@ -2,7 +2,7 @@ import React from 'react';
 import { nanoid } from 'nanoid';
 import './ContactForm.css';
 
-const nameId = nanoid();
+// const nameId = nanoid();
 
 const ContactForm = ({ value, onAddToList }) => {
   const nameId = nanoid();

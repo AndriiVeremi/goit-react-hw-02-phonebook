@@ -1,0 +1,30 @@
+.Contact__list {
+  /* display: flex; */
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.Contact__item {
+  display: flex;
+  align-items: center;
+}
+
+.Contact__name {
+  margin-right: 20px;
+}
+
+.Contact__text {
+  margin-right: 40px;
+}
+
+.Contact__btn {
+  border: 1px solid #2196f3;
+  border-radius: 5px;
+  margin-left: auto;
+  display: block;
+  width: 70px;
+  height: 20px;
+  color: #f44336;
+  font-weight: 700;
+}

@@ -6,7 +6,7 @@ import Filter from './Filter/Filter';
 import Section from './Section/Section';
 import Header from './Header/Header';
 
-class App extends Component {
+export class App extends Component {
   state = {
     contacts: [
       { id: 'id-1', name: 'Rosie Simpson', number: '459-12-56' },
@@ -71,7 +71,7 @@ class App extends Component {
   }
 }
 
-export default App;
+// export default App;
 
 // export const App = () => {
 //   return (

@@ -1,24 +1,24 @@
-.Contact__list {
+.list {
   /* display: flex; */
   margin: 0;
   padding: 0;
   margin-bottom: 30px;
 }
 
-.Contact__item {
+.item {
   display: flex;
   align-items: center;
 }
 
-.Contact__name {
+.name {
   margin-right: 20px;
 }
 
-.Contact__text {
+.text {
   margin-right: 40px;
 }
 
-.Contact__btn {
+.btn {
   border: 1px solid #2196f3;
   border-radius: 5px;
   margin-left: auto;

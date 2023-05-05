@@ -1,9 +1,9 @@
-.Lable__filter {
+.filter {
   display: flex;
   flex-direction: column;
 }
 
-.Input__filter {
+.input {
   border: 1px solid #2196f3;
   width: 300px;
   height: 25px;

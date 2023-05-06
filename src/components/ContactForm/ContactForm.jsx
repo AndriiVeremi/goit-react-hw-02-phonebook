@@ -4,11 +4,13 @@ import PropTypes from 'prop-types';
 import './ContactForm.css';
 
 class ContactForm extends Component {
- 
   state = {
     name: '',
     number: '',
   };
+
+  nameId = nanoid();
+  numberId = nanoid();
 
   handleChange = e => {
     const { name, value } = e.currentTarget;
@@ -30,15 +32,13 @@ class ContactForm extends Component {
   }
 
   render() {
-    const nameId = nanoid();
-
     return (
       <form className="form" autoComplete="off" onSubmit={this.handleSubmit}>
-        <label className="label" htmlFor={nameId}>
+        <label className="label" htmlFor={this.nameId}>
           Name :{' '}
           <input
             className="form__input"
-            id={nameId}
+            id={this.nameId}
             type="text"
             value={this.state.name}
             onChange={this.handleChange}
@@ -49,10 +49,11 @@ class ContactForm extends Component {
           />
         </label>
 
-        <label className="label" htmlFor={nameId}>
+        <label className="label" htmlFor={this.numberId}>
           Number :{' '}
           <input
             className="form__input"
+            id={this.numberId}
             type="tel"
             value={this.state.number}
             onChange={this.handleChange}
@@ -69,7 +70,7 @@ class ContactForm extends Component {
       </form>
     );
   }
-};
+}
 
 export default ContactForm;
 

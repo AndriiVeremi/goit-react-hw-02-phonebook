@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { AiOutlineUserDelete } from 'react-icons/ai';
 import css from './ContactList.module.css'
 
 const ContactList = ({ contacts, onDeleteContacts }) => (
@@ -13,6 +14,7 @@ const ContactList = ({ contacts, onDeleteContacts }) => (
           type="button"
           onClick={() => onDeleteContacts(id)}
         >
+          <AiOutlineUserDelete className={css.item_icon} />
           Delete
         </button>
       </li>

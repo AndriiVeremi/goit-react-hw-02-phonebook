@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import { nanoid } from 'nanoid';
 import PropTypes from 'prop-types';
-
-import {  AiOutlineUserAdd } from 'react-icons/ai';
+import {
+  AiOutlineUser,
+  AiOutlineUserAdd,
+  AiTwotonePhone,
+} from 'react-icons/ai';
 
 import css from './ContactForm.module.css'
 
@@ -42,6 +45,7 @@ class ContactForm extends Component {
         onSubmit={this.handleSubmit}
       >
         <label className={css.label} htmlFor={this.nameId}>
+          <AiOutlineUser className={css.name_icon} />
           Name :{' '}
           <input
             className={css.form__input}
@@ -57,7 +61,8 @@ class ContactForm extends Component {
         </label>
 
         <label className={css.label} htmlFor={this.numberId}>
-          Number :{' '}
+          <AiTwotonePhone className={css.name_icon} />
+          Number : 
           <input
             className={css.form__input}
             id={this.numberId}
@@ -72,7 +77,7 @@ class ContactForm extends Component {
         </label>
 
         <button className={css.btn} type="submit">
-         <AiOutlineUserAdd className={css.btn__icon} />
+          <AiOutlineUserAdd className={css.btn__icon} />
           Add contact
         </button>
       </form>

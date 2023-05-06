@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { nanoid } from 'nanoid';
 import PropTypes from 'prop-types';
+
+import {  AiOutlineUserAdd } from 'react-icons/ai';
+
 import css from './ContactForm.module.css'
 
 class ContactForm extends Component {
@@ -69,6 +72,7 @@ class ContactForm extends Component {
         </label>
 
         <button className={css.btn} type="submit">
+         <AiOutlineUserAdd className={css.btn__icon} />
           Add contact
         </button>
       </form>
